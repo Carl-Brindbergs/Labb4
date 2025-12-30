@@ -249,7 +249,7 @@ namespace labb4
 
             public override string ToString()
             {
-                if (BirthDate.Day < 3)
+                if (BirthDate.Day < 3 || BirthDate.Day > 20 && BirthDate.Day < 23 || BirthDate.Day > 30)
                     return
                     $"Name: {Name.FirstName} {Name.LastName}\n" +
                     $"Gender: {Gender}\n" +
